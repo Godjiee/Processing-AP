@@ -74,8 +74,8 @@ void draw() {
     char tempLetter;
 
     if (distMouseLetter < 100) {
-      tempC = color(0,0,255);
-      tempLetter = char(int(90));
+      tempC = color(0,100,255);
+      tempLetter = char(int(120));
     } else {
       tempC = c[i];
       tempLetter = letter[i];
