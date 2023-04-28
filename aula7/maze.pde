@@ -83,6 +83,8 @@ void draw () {
     textAlign(CENTER, CENTER);
     textFont(font, 50);
     text("Game over", width/2, height/2 - 300);
+    textFont(font, 40);
+    text("Press R to restart", width/2, height/2 - 250);
   }
 }
 
@@ -108,9 +110,9 @@ void playerDraw() {
   imageMode(CENTER);
   
   if (LR){
-  image(imgRIGHT, posPlayerC * dimRect + dimRect/2, posPlayerL * dimRect + dimRect/2, dimRect/2, dimRect/2);
+    image(imgRIGHT, posPlayerC * dimRect + dimRect/2, posPlayerL * dimRect + dimRect/2, dimRect/2, dimRect/2);
   }else{
-  image(imgLEFT, posPlayerC * dimRect + dimRect/2, posPlayerL * dimRect + dimRect/2, dimRect/2, dimRect/2);
+    image(imgLEFT, posPlayerC * dimRect + dimRect/2, posPlayerL * dimRect + dimRect/2, dimRect/2, dimRect/2);
   }
   
 }
